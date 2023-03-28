@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo especialle 16px.png" type="image/x-icon">
+    <title>Contatos</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.logo {
+    width: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    padding: 5px 34px;
+    background-color: #000;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu {
+    transition: 0.5s ease;
+}
+
+.manu:hover {
+    color: #cacaca;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #333;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+}
+
+.list-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.list-menu 
+.menu {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #a7a7a7;
+    transition: all 0.5s;
+} */
+
+.contato {
+    background-image: url(image/BG-ESPEIALLE-ESPECIALLE\ pagina\ de\ contato.png);
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 100px;
+}
+
+.titulo {
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.quadros {
+    display: flex;
+    gap: 32px;
+    margin: 60px 0px;
+    padding: 0pc 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quadros a {
+    text-decoration: none;
+    color: #111;
+}
+
+.primeiro-quadro {
+    line-height: 30px;
+    padding: 10px;
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.segundo-quadro {
+    line-height: 30px;
+    padding: 10px;
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.icon-carta {
+    width: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp {
+    display: flex;
+}
+
+.mapa {
+    width: 100%;
+    padding: 50px;
+    padding-top: 5px;
+}
+
+.foto-vendedora {
+    width: 300px;
+ 
+}
+
+footer {
+    background-color: #111;
+    padding: 50px 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-left {
+    display: inline-block;
+}
+
+.logo-footer {
+    width: 120px;
+}
+
+.endereço {
+    color: #fff;
+    display: inline-block;
+}
+
+.email {
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-dois {
+    text-align: center;
+    background-color: #000;
+}
+
+.textos {
+    color: #fff;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 1103px) {
+    .quadros {
+        display: flex;
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+    .quadros {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .quadro-vendedora-sayane {
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+    }
+
+    .vendedor-pedro {
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+    }
+}
+
+.quadro-vendedora-sayane {
+    display: flex;
+    border: 1px solid #111;
+}
+
+.vendedor-pedro {
+    display: flex;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width: 1115px) {
+    .quadros {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @media only screen and (max-width: 660px)  */
+
+
+    </style>
+</head>
+    <body>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img class="logo" src="image/especialle (1).png" alt="logo">
+            </a>
+            <ul class="navMenu">
+                <li class="nav-item"><a class="menu" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="menu" href="sobre-nós.html">Sobre </a></li>
+                <li class="nav-item"><a class="menu" href="materiais.html">materiais</a> </li>
+                <li class="nav-item"><a class="menu" href="contato.html">contatos</a></li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="contato">
+    <div class="container">
+        <h1 class="titulo">entre em contato conosco</h1>
+    </div>
+</section>
+
+<section class="contatos">
+    <div class="container">
+        <div class="quadros">
+            <div class="quadro-vendedora-sayane">
+                <img class="foto-vendedora" src="image/vendedora 2.png">
+                <div class="primeiro-quadro">
+                    <div class="nome-e-cargo">
+                        <h4 class="nome-do-vendedor">Sayane Thompson </h4>
+                        <h4 class="cargo-do-vendedor">Vendedora</h4>
+                    </div>
+                    <div class="email">
+                        <img class="icon-carta" src="image/bx-envelope.svg">
+                        <a href="">contato@especiallestones.com.br</a>
+                    </div>
+                    <div class="whatsapp">
+                        <img src="image/bxl-whatsapp.svg">
+                        <a href="https://web.whatsapp.com/send?phone=28999005588" target="_blank">(28) 99930-4746</a>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="vendedor-pedro">
+                <img class="foto-vendedora" src="image/vendedora 2.png" alt="">
+                <div class="segundo-quadro">
+                    <div class="nome-e-cargo">
+                        <h4 class="nome-do-vendedor">Pedro Azevedo</h4>
+                        <h4 class="cargo-do-vendedor">Gerente de Vendas</h4>
+                    </div>
+                    <div class="email">
+                        <img class="icon-carta" src="image/bx-envelope.svg">
+                        <a href="">contato@especiallestones.com.br</a>
+                    </div>
+                    <div class="whatsapp">
+                        <img src="image/bxl-whatsapp.svg" alt="">
+                        <a href="https://web.whatsapp.com/send?phone=28999005588" target="_blank">(28) 999005588</a>
+                    </div>
+                </div>   
+            </div>
+
+            <!-- <div class="vendedor-Eduardo Moreira">
+                <img src="image/vendedora 2.png" alt="">
+                <div class="terceiro-quadro">
+                    <div class="nome-e-cargo">
+                        <h4 class="nome-do-vendedor">Eduardo Moreira</h4>
+                        <h4 class="cargo-do-vendedor">Gerente de Vendas</h4>
+                    </div>
+                    <div class="email">
+                        <img class="icon-carta" src="image/bx-envelope.svg">
+                        <a href="">contato@especiallestones.com.br</a>
+                    </div>
+                    <div class="whatsapp">
+                        <img src="image/bxl-whatsapp.svg" alt="">
+                        <a href="https://web.whatsapp.com/send?phone=28999005588" target="_blank">(28) 999005588</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119311.8121152362!2d-41.210013276976944!3d-20.852124559560924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb95d3d7ef7ecb9%3A0xa68aadb2a822a95!2sCachoeiro%20de%20Itapemirim%2C%20ES!5e0!3m2!1spt-BR!2sbr!4v1677327970350!5m2!1spt-BR!2sbr" width="2080" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer>
+            <div class="content">
+                <div class="img-left">
+                   <a href="index.html"><img class="logo-footer" src="image/especialle (1).png"></a>
+                </div>
+                <div class="endereço">
+                    <p class="endereço">Avenida Especialle Stone,<br> Cachoeiro de Itapemirim - ES, Brasil<br>CEP 21234-000</p>
+                </div>
+                <div class="emails">
+                    <a class="email" href="#">contato@especiallestones.com.br</a>
+                    <a class="email" href="#">financeiro@especiallestones.com.br</a>
+                    <a class="email" href="#">sales1@especiallestones.com.br</a>
+                    <a class="email" href="#">sales2@especiallestones.com.br</a>
+                    <a class="email" href="#">sales3@especiallestones.com.br</a>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer-dois">
+            <div class="textos">
+                <h4>2023 - Especialle</h4>
+                <h4>Daniel Costa Favaris</h4>
+            </div>
+        </footer>
+    </body>
+    <script src="script.js" defer></script>
+</html>

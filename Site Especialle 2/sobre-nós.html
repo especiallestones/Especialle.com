@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo especialle 16px.png" type="image/x-icon">
+    <title>Sobre Nós</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Encode Sans Semi Expanded', sans-serif;
+        }
+        
+        .logo {
+            width: 70px;
+        }
+
+        header .conteudo-principal {
+    height: 90vh;
+}
+
+.logo {
+    width: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    padding: 20px 34px;
+    background-color: #000;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu {
+    transition: 0.5s ease;
+}
+
+.manu:hover {
+    color: #cacaca;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #333;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+}
+
+        .titulo {
+            font-size: 35px;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 14%;
+            transform: translate(-50%, -50%);
+        }
+        
+    .sobre-nós {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 100px;
+    }
+
+    .sobre-nós img {
+        width: 550px;
+    }
+
+    .titulo-sobre-nós {
+        padding-bottom: 25px;
+        font-size: 32px;
+    }
+
+    .textos {
+        line-height: 25px;
+    }
+
+    .icon-carta {
+        width: 20px;
+    }
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp {
+    display: flex;
+}
+
+.contatos {
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #111;
+    padding: 50px 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-left {
+    display: inline-block;
+}
+
+.logo-footer {
+    width: 120px;
+}
+
+.endereço {
+    color: #fff;
+    display: inline-block;
+}
+
+.email {
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-dois {
+    text-align: center;
+    background-color: #000;
+}
+
+.textos-footer {
+    color: #fff;
+    line-height: 25px;
+}
+
+.textos {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 970px) {
+    .conteudo-principal .sobre-nós{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+    }
+
+    .textos {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 680px) {
+    footer .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .primeira-image {
+    }
+}
+
+    </style>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <a class="logo" href="index.html">
+                        <img class="logo" src="image/especialle (1).png" alt="logo">
+                    </a>
+                    <ul class="navMenu">
+                        <li class="nav-item"><a class="menu" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="menu" href="sobre-nós.html">Sobre </a></li>
+                        <li class="nav-item"><a class="menu" href="materiais.html">materiais</a> </li>
+                        <li class="nav-item"><a class="menu" href="contato.html">contatos</a></li>
+                    </ul>
+
+                    <div class="hamburguer">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+
+            <section class="sobre-nós">
+                <div class="textos">
+                    <h2 class="titulo-sobre-nós">Sobre Nós</h2>
+                    <p class="paragrafo">Dando sequência a três gerações imersas no mundo das rochas ornamentais, a Especialle mármores e granitos, uma empresa que deposita o seu empenho em fazer das rochas algo ainda mais especial, focando em tecnologia, variedade de produtos, processo produtivo muito bem planejados, uma equipe experiente e bem-preparada e um parque industrial tecnologicamente atualizado, conseguimos atender aos mais exigentes mercados de Rochas Ornamentais e similares, ofertando uma grande variedade de produtos, naturais, que vão desde a linha Clássica, até os Super Exóticos, contando ainda com materiais Sintéticos (Laminas ultra compactas, Prime, Quartzo, Nano), que também tem seu espaço no mercado e na nossa empresa. Desta maneira conseguimos suprir com eficiência a alta demanda do mercado.</p>
+                </div>
+                <img class="primeira-image" src="image/pedreira especialle.jfif">
+            </section>
+
+            <section class="sobre-nós">
+                <img src="image/Pedreira-Salto-Sorocaba.jpg">
+                <div class="textos">
+                    <p class="paragrafo"> A nossa imagem no mercado é construída com base em uma relação de confiança com nossos parceiros. Com simplicidade, transparência e respeito, buscamos atender a nossos clientes com confiabilidade e segurança, oferecendo a eles produtos com um alto padrão de qualidade.
+                        Do clássico aos exótico e super exóticos, do natural ao sintético, da especialle é especial, e naturalmente feito para você.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="content">
+                <div class="img-left">
+                   <a href="index.html"><img class="logo-footer" src="image/especialle (1).png"></a>
+                </div>
+                <div class="endereço">
+                    <p class="endereço">Avenida Especialle Stone,<br> Cachoeiro de Itapemirim - ES, Brasil<br>CEP 21234-000</p>
+                </div>
+                <div class="emails">
+                    <a class="email" href="#">contato@especiallestones.com.br</a>
+                    <a class="email" href="#">financeiro@especiallestones.com.br</a>
+                    <a class="email" href="#">sales1@especiallestones.com.br</a>
+                    <a class="email" href="#">sales2@especiallestones.com.br</a>
+                    <a class="email" href="#">sales3@especiallestones.com.br</a>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer-dois">
+            <div class="textos-footer">
+                <h4>2023 - Especialle</h4>
+                <h4>Daniel Costa Favaris</h4>
+            </div>
+        </footer>
+    </body>
+    <script src="script.js" defer></script>
+</html>
